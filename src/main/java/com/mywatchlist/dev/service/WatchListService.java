@@ -8,7 +8,7 @@ import java.util.List;
 public interface WatchListService {
     List<Show> getCompleteWatchList();
 
-    Show addShowToWatchList(Show show);
+    void addShowToWatchList(Show show);
 
     Show deleteShowFromWatchList(String showId);
 }

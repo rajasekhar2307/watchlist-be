@@ -19,8 +19,8 @@ public class WatchListServiceImpl implements WatchListService {
     }
 
     @Override
-    public Show addShowToWatchList(Show show) {
-        return null;
+    public void addShowToWatchList(Show show) {
+        watchListRepository.save(show);
     }
 
     @Override
